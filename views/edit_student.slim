@@ -1,0 +1,5 @@
+<!-- EDIT STUDENT DETAILS -->
+h1 Edit Student
+form method="POST" action="/students/#{@record.id}"
+  input type="hidden" name="_method" value="PUT"
+  == slim :student_form

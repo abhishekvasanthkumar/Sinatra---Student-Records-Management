@@ -1,0 +1,13 @@
+<!-- LAYOUT -->
+doctype html
+html lang="en"
+  head
+    title == @title || "Student Management"
+    meta charset="utf-8"
+    link rel="stylesheet" href="/styles.css"
+  body
+    header
+      h1 Students Record Management
+      == slim :nav
+    section
+      == yield

@@ -1,0 +1,20 @@
+<!-- STUDENT DETAILS FORM-->
+label for="first_name" First Name:
+input#first_name type="text" name="record[first_name]" value="#{@record.first_name}"
+label for="last_name" Last Name:
+input#last_name type="text" name="record[last_name]" value="#{@record.last_name}"
+label for="degree" Major:
+input#degree type="text" name="record[degree]" value="#{@record.degree}"
+label for="degree_date" Student ID:
+input#degree_date type="number" name="record[degree_date]" value="#{@record.degree_date}"
+label for="concentration" Specialization:
+input#concentration type="text" name="record[concentration]" value="#{@record.concentration}"
+br
+br
+input type="submit" value="SAVE DETAILS"
+br
+br
+<button><a href="/students">BACK TO RECORDS</a></button>
+br
+br
+<button><a href="/logout">LOG OUT</a></button>

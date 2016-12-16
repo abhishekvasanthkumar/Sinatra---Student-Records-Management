@@ -1,0 +1,18 @@
+<!-- STUDENT RECORDS -->
+h1 Students Record
+<h4> The following are the existing Students Records:
+
+- if @records.any?
+  ul#students
+    -@records.each do |record|
+      li <a href="/students/#{record.id}">#{record.first_name} #{record.last_name}</a>
+- else
+  p No student records have been created yet!
+
+<!-- h4 <a href="/students/new">Add New Student Record</a> -->
+
+<form action="/students/new">
+    <input type="submit" value="ADD A NEW STUDENT RECORD" />
+</form>
+br
+<button><a href="/logout">LOG OUT</a></button>

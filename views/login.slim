@@ -1,0 +1,15 @@
+<!-- LOGIN PAGE -->
+form method="POST" action="/login"
+	- if session[:fail]
+		p style="color:red;" Invalid Login Credentials
+		- session[:fail] = false
+	br
+	label for="username" Username:
+	input#username name="username"
+	br
+	br
+	label for="password" Password:
+	input#password type="password" name="password"
+	br
+	br
+	input type="submit" value="LOG IN"

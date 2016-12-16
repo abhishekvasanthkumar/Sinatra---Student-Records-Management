@@ -1,0 +1,19 @@
+<!-- SHOW STUDENT DETAILS -->
+h1 Name: #{@record.first_name+ " " +@record.last_name}
+h1 Student ID: #{@record.degree_date}
+h1 Major: #{@record.degree}
+h1 Specialization: #{@record.concentration}
+<!-- p <a href="/students">back to students record</a> -->
+<button><a href="/students">BACK TO RECORDS</a></button>
+br
+br
+<button><a href="/students/#{@record.id}/edit">EDIT THIS RECORD</a></button>
+br
+br
+<!-- p <a href="/students/#{@record.id}/edit">edit this record</a> -->
+form action="/students/#{@record.id}" method="POST"
+  input type="hidden" name="_method" value="DELETE"
+  input type="submit" value="DELETE THIS RECORD"
+br
+br
+<button><a href="/logout">LOG OUT</a></button>
